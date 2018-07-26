@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EZGrader"
+             x:Class="EZGrader.Page1"
+             Title="New Test">
+    <ContentPage.Content>
+        <StackLayout
+            x:Name="stackLayout">
+
+                <Entry x:Name="testName"
+                       Placeholder="Test Name"
+                   VerticalOptions="Center"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="30"
+                   TextChanged="EntryTextChanged"
+                   Margin="5, 20, 5, 20"/>
+
+                <Entry x:Name="QuestionNumberTotal"
+                       Placeholder="Points"
+                   VerticalOptions="End"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="30"
+                   Keyboard="Numeric"
+                   TextChanged="OnEntryNumChanged"
+                   Margin="0, 10, 0, 20"
+                   />
+
+            <Button x:Name="enterTest"
+                        Text="Continue"
+                        VerticalOptions="StartAndExpand"
+                        HeightRequest="80"
+                        FontSize="20"
+                        TextColor="White"
+                        Margin="20, 10, 20, 20"/>
+
+            <local:AdMobView AdUnitId="ca-app-pub-7713536655172041/3111807400" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
